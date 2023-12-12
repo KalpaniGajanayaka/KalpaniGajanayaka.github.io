@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #869a61;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>	
+
+
+
+    <title>EmoSense Pro</title>
+</head>
+<body style="background-color: #E9F7EF">
+    <!-- NavBar -->
+    <nav id="navmenu" class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#home">
+            <img src="./Images/icon.jpg" width="30" height="30" class="d-inline-block align-top"  loading="lazy">
+            <span>EmoSense Pro</span></br>
+        </a>
+        <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="nav-toggle-icon" class="fas fa-ellipsis-v"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navmenu-links" class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Project Scope
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#a">Introduction and Background</a>
+                <a class="dropdown-item" href="#b">Literature Survey</a>
+                <a class="dropdown-item" href="#c">Research Gap</a>
+                <a class="dropdown-item" href="#d">Research Problem</a>
+                <a class="dropdown-item" href="#e">Research Solution</a>
+                <a class="dropdown-item" href="#f">Results and Discussion</a>
+                <a class="dropdown-item" href="#g">Research Objective</a>
+                <a class="dropdown-item" href="#h">Methodology</a>
+                <a class="dropdown-item" href="#j">Technology used</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#milestones">Milestones</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Project Materials
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#downloads">Project Documents</a>
+                  <a class="dropdown-item" href="#presentations">Project Presentations</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Home -->
+      <section id="home">
+        <div class="container">
+            <div class="hero-cta">
+                <h1>Realtime Emotion and Stress <br/>Recognition App</h1>
+                <p> "EmoSense Pro, Your personal emotion companion, instantly recognizing and understanding your emotions and stress levels in real-time."<br><br>Features included in the application : 
+                <br>1. Sentiment recognition chat app by analyzing text and image features.
+                <br>2. Observing the person's facial expressions and voice detection.
+                <br>3. Emotion Detection and Analysis on Facebook and Twitter.
+                <br>4. Identify the stress level and recommend appropriate activities using an IOT device.
+              </p>
+            </div>
+        </div>
+        <div class="hero-cover">
+            <img class="hero-image" src="./Images/background.jpg"/>
+        </div>
+      </section>
+      <!-- project-scope --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <section style="background-color:#FDFEFE">
+        <div class="container">
+            <!-- Literature Survey -->
+<div id="a"><br><br><br><br>
+	<h2 style="color:#869a61">Introduction and Background</h2>
+	</br>
+	<p style="text-align: justify;">""Realtime Emotion and Stress Recognition App Development is an expansive and multifaceted study area that is deeply engrossed in the creation of cutting-edge mobile applications. Leveraging state-of-the-art technologies such as machine learning, computer vision, and natural language processing, the primary focus of this field lies in the real-time identification and evaluation of users' emotions and stress levels. At its core, this dynamic domain seamlessly integrates insights from psychology, data science, and mobile technology to conceptualize and develop 
+    applications that transcend mere functionality. The overarching mission is to empower users in managing their emotional well-being by crafting apps that not only identify and evaluate emotional states but also provide individualized advice tailored to unique user profiles. In this symbiotic fusion of psychology and technology, Realtime Emotion and Stress Recognition App Development becomes a nexus where the intricacies of human emotions intersect with the capabilities of advanced computational tools. These applications aim not only to assist users in navigating the complex landscape of their emotional 
+    health but also to contribute meaningfully to the broader field of mental health. The utilization of machine learning algorithms allows these applications to continuously evolve and adapt to individual users' emotional nuances. By harnessing the power of computer vision, the apps gain the ability to analyze facial expressions, body language, and other visual cues, providing a more holistic understanding of the user's emotional state. Natural language processing further enhances the app's capabilities by deciphering textual inputs, enabling a nuanced understanding of the user's emotional journey. 
+    The synthesized knowledge from psychology informs the design and functionality of these apps, ensuring that they align with established principles of emotional well-being. By seamlessly blending these diverse disciplines, Realtime Emotion and Stress Recognition App Development transcends the traditional boundaries of technology and human behavior, offering a unique and comprehensive approach to mental health in our ever-evolving digital society. In an era where digital interactions are ubiquitous, the objective of this field extends beyond the mere development of functional applications. Instead, 
+    it aspires to create approachable tools that foster emotional awareness among users. These tools go beyond mere identification and evaluation; they strive to be companions in the journey toward improved mental health, providing meaningful insights and support.
+  </P>
+                </div>
+
+
+<div id="b"><br><br><br><br>
+	<h2 style="color:#869a61">Literature Survey</h2>
+	</br>
+	<p style="text-align: justify;">In a comprehensive exploration of emotion recognition technologies, Chathumali and Thelijjagoda (2020) present a methodology focusing on human emotion identification in Facebook comments. Utilizing Natural Language Processing techniques, the authors categorize comments into six emotion categories, emphasizing the potential applications in recommendation systems, emotion analysis, and tailored marketing. Supervised learning techniques, including Naive Bayes, Support Vector Machines, and Random Forest, are employed, with Support Vector Machines demonstrating superior performance. 
+    The study assesses classifier performance using metrics such as accuracy, recall, and F1-score, affirming the effectiveness of the proposed framework for recognizing emotions in Facebook comments. Krommyda (2020) addresses the challenge of limited annotated data in emotion recognition algorithms by proposing a criteria-based approach for collecting annotated data from tweets. This linguistically and syntactically informed system achieves an F1-score of 0.67 for detecting six fundamental emotions. The study highlights the method's cost-effectiveness and efficiency, suggesting its applicability for emotion 
+    recognition in Twitter tweets. Lisa Graziani (2019) introduces a mechanism for predicting Facebook reactions based on emotions in posts. Utilizing a deep neural network, the model accurately forecasts reaction types, offering potential applications in designing more effective social media marketing strategies. Deshmukh, Jagtap, and Paygude (2017) conduct a research project on facial emotion recognition, integrating a system that customizes music based on identified emotions. The system addresses emotions such as happiness, sadness, surprise, fear, disapproval, and anger in real-time webcam photos, aiming to 
+    provide music therapy for stress reduction. Kumar's (2016) study presents an efficient feature extraction strategy for voice processing, achieving a 90% accuracy rate in speaker and voice recognition. The proposed approach employs relative spectral methods, destroyed wavelet, and relative predictive coding. Tarnowski et al.'s (2017) research focuses on emotion recognition through facial expressions, identifying seven emotional states. The study employs k-NN and MLP neural network classifiers, showcasing the accuracy of identifying emotional states from facial expressions. The MLP neural network outperforms 
+    the k-NN classifier, emphasizing the potential for machine learning methods in emotion classification.</P>
+<p style="text-align: justify;">Referance : <p>
+<p style="text-align: justify;">[1] Deshmukh, R. S., Jagtap, V., & Paygude, S. (2017). Facial Emotion Recognition System through Machine Learning approach. International Journal of Engineering Research and Applications, 7(1), 66-71.
+<br>[2] Kumar, P. M. (2016). A New Human Voice Recognition System. International Journal of Computer Applications, 143(5), 34-37.
+<br>[3] Arifoglu, D., & Bouchachia, A. (2017). Activity Recognition and Abnormal Behaviour Detection with Recurrent Neural Networks. In International Conference on Artificial Neural Networks (pp. 115-123). Springer, Cham.
+<br>[4] Tarnowski, P., Kołodziej, M., Majkowski, A., & Rak, R. J. (2017). Emotion recognition using facial expressions. In 2017 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 1191-1196). IEEE.
+<br>[5] Perrachione, T. K., Del Tufo, S. N., & Gabrieli, J. D. E. (2011). Human voice recognition depends on language ability. Science, 333(6042), 595-595. doi: 10.1126/science.1207327
+<br>[6] Zhang, Y., Cai, J., Xiao, D., Li, Z., & Xiong, B. (2019). Real-time sow behavior detection based on deep learning. Computers and Electronics in Agriculture, 157, 300-307. doi: 10.1016/j.compag.2018.12.018
+<br>[7] Dubey, M., & Singh, L. (2016). A comprehensive survey of emotion recognition system in facial expression. International Journal of Engineering Trends and Technology (IJETT), 33(2), 64-68.
+<br>[8] "Combining facial expressions, prosody, and lexical knowledge in real-time emotional categorization of speech" by Hazan, T. et al. (2018). This study examines the role of facial expressions, prosody, and lexical knowledge in real-time emotional categorization of speech and demonstrates the advantages of combining multiple modalities.               
+</p>
+</div>
+
+<div id="c"><br><br><br><br>
+	<h2 style="color:#869a61">Research Gap</h2>
+	</br>
+	<p style="text-align: justify;">In terms of text-based sentiment analysis and emotion recognition, current research has achieved substantial advancements. However, there is a research vacuum in establishing all-encompassing strategies that use verbal, aural, and visual data for sentiment analysis. Despite recent advancements like the MF-BERT model, there is still work to be done in order to better understand the time dependent interactions between different modalities and to recognize emotions more precisely and with context.
+    Most of the testing and development of stress detection equipment has taken place in carefully monitored lab environments. There are still research gaps in the creation of reliable and non-intrusive stress detection techniques for real-world situations employing cellphones and wearable sensors. By overcoming these obstacles, highly accurate systems that track users' stress levels and provide real-time stress management will be developed. Although wearable technology has the capacity to track and identify human emotions, there is still a research gap that prevents this technology from being more publicly available and usable. 
+    Research should concentrate on creating effective systems, such as the one that uses heart rate information from smart wristbands, to track users' emotional states in real-time without a lot of disruption.
+    Although there are algorithms for identifying facial expressions, they might be improved to accurately identify a wider range of emotions. Existing systems mostly concentrate on a small number of emotions, including joy, sorrow, surprise, fear, disgust, and rage. Future studies may improve the capability to identify and categorize a greater variety of facial emotions, producing more accurate and nuanced findings. Research is still being done on how to recognize emotions in social media, particularly on sites like Facebook. There is opportunity for more sophisticated strategies that take into account complicated emotional states 
+    and the environment in which they are manifested in addition to the existing methods' primary focus on recognizing fundamental emotions. There are several uses for developing algorithms that can properly recognize and classify emotions from user comments in marketing, sentiment analysis, and user experience enhancement.
+.</P>
+                </div>
+
+<div id="d"><br><br><br><br>
+	<h2 style="color:#869a61">Research Problem</h2>
+	</br>
+	<p style="text-align: justify;">Although there has been substantial progress in the fields of sentiment analysis, emotion detection, and multimodal analysis, there is still a vital need for complete sentiment recognition chat applications. Although separate studies have looked into text-based sentiment analysis and image-based emotion recognition, there is still a significant research gap in the creation of chat applications that seamlessly combine text and image features to offer a comprehensive understanding of user emotions in real-time conversations. Furthermore, the discipline is deficient in cutting-edge multimodal 
+    fusion methods that efficiently exploit the synergy between textual and visual material while omitting the study of temporal connections between these data types. Additionally, there is still little research on the selection and optimization of machine learning methods for sentiment analysis in chat apps, leaving problems with data imbalance and semantic feature extraction unresolved.
+    The user experience is further hampered by the lack of real-time emotion identification capabilities because most present research relies on offline analysis. Additionally, in favor of technical breakthroughs, user privacy issues and the ethical aspects of sentiment analysis frequently take a backseat. As a result, the main research challenge is to create sentiment recognition chat applications that fill in these knowledge gaps by integrating text and image analysis, innovating multimodal fusion techniques, optimizing machine learning algorithms, enabling real-time emotion recognition, and emphasizing user-centric values. 
+    This will improve the field's ability to analyze and handle human emotions within interactive chat environments. People don't have time to engage with one another in today's hectic environment. Emotion recognition chats may be used to better comprehend user emotions in environments where many people are under continual stress, assist their emotional wellbeing, and enhance the user experience. How can a program assess both text and visual characteristics efficiently? This research project intends to solve the difficulty of creating a chat application that integrates picture analysis in addition to text-based sentiment 
+    analysis to give a more comprehensive understanding of users' sentiments and emotions. By doing this, it aims to enhance the app's comprehension of and responsiveness to users' emotional states, thereby enhancing emotional support and user pleasure.</P>
+                </div>
+<div id="e"><br><br><br><br>
+	<h2 style="color:#869a61">Research Solution</h2>
+	</br>
+	<p style="text-align: justify;">
+    This research proposes a comprehensive solution to the existing challenges in sentiment recognition chat applications, aiming to bridge gaps in text and image analysis integration, multimodal fusion techniques, machine learning optimization, real-time emotion recognition, and user-centric values. To tackle these issues, the study advocates the development of advanced multimodal fusion techniques that seamlessly combine text and image features in real-time, emphasizing the temporal connections between these data types. It also addresses machine learning optimization by exploring suitable algorithms for sentiment analysis, 
+    mitigating data imbalance, and enhancing semantic feature extraction. The proposed solution places a strong emphasis on real-time emotion identification, implementing mechanisms for prompt responses to users' changing emotional states during conversations. Furthermore, the research prioritizes user privacy and ethical considerations, ensuring responsible data handling. User-centric design principles guide the development process, with a focus on positive user experiences and customizable privacy settings. Through rigorous validation and testing, including user trials, the goal is to iteratively refine the sentiment 
+    recognition chat application, staying abreast of technological advancements and user feedback to contribute to the effective understanding and management of human emotions in interactive chat environments.
+</P>
+                </div>
+
+<div id="f"><br><br><br><br>
+	<h2 style="color:#869a61">Results and Discussion
+</h2>
+	</br>
+	<p style="text-align: justify;">A compelling avenue for examining human emotions in the digital age is provided by the study areas of emotion detection and analysis on Facebook and Twitter, as emotion identification and analysis utilizing facial expressions and tone of voice. Every element is essential to understanding the intricate dynamics of emotions displayed on social media sites.
+    A thorough foundation for researching emotions in the digital environment is provided by the research areas of emotion detection and analysis on Facebook and Twitter, as well as emotion identification and analysis utilizing facial expressions and tone of voice. To decipher emotional indicators in social media data, these components make use of computer vision, audio analysis, natural 
+    language processing, and machine learning approaches. Despite its difficulties, this field of study has enormous potential for understanding public opinion, forecasting emotional responses, and guiding a variety of social media-related applications including marketing, crisis management, and mental health assistance.
+    This field of research involves a number of difficulties. First of all, since emotions are multifaceted and may be conveyed in a variety of ways, precisely recognizing them purely based on facial expressions or voice tones can be challenging. It is crucial to create reliable algorithms that take individual, cultural, and environmental variations in emotional expression into consideration. 
+    When using social media data, privacy issues and ethical issues must also be taken into account. Responsible research in this field must prioritize data anonymization, user privacy protection, and informed permission.</P>
+                </div>
+           
+          <div id="g"><br><br><br><br>
+	<h2 style="color:#869a61">Research Objective
+</h2>
+	</br>
+	<p style="text-align: justify;"><strong style="color:#869a61;">Main Objectives: </strong><br>Develop a comprehensive Emotion-Aware Chat Application that integrates text and image analysis, observes facial expressions and voice cues, performs emotion detection and analysis on social media platforms (Facebook and Twitter), and utilizes an IoT device to identify stress levels and recommend appropriate activities. </P>
+	<p style="text-align: justify;"><strong style="color:#869a61;">Sub Objectives: </strong><br><strong>1. Sentiment recognition chat app by analyzing text and image features. </strong><br>A chatapp needs to be intelligent and respond to each response and keep the conversation going, even understand and respond to emojis, eventually indicating stress levels and mental state. 
+    <br><strong>2. Observing the person's facial expressions and voice detection: </strong><br>Observing the person's facial expression, voice and identifying them to observe if the person is suffering from any mental stress.
+    <br><strong>3. Emotion Detection and Analysis on Facebook and Twitter: </strong><br>Employee emotion detection and analysis on Facebook and Twitter. It identified and analyzed using Facebook and Twitter posts, comments, and reactions.
+    <br><strong>4. Identify the stress level and recommend appropriate activities using an IOT device: </strong><br>This research project aims to develop an IoT system for measuring and mitigating stress, offering personalized stress reduction exercises to improve overall well-being.
+    </P>
+                </div>
+            <!-- Methodology -->
+                      <div id="h"><br><br><br><br>
+	<h2 style="color:#869a61">Methodology
+</h2>
+
+<div class="row">
+      <img src="./Images/a.png" alt="Ms. Suranjini Silva" width="550" height="300">
+      <img src="./Images/c.png" alt="Ms. Suranjini Silva" width="550" height="300">
+      </div>
+      <center><img src="./Images/b.png" alt="Ms. Suranjini Silva" width="600" height="400"></center>
+      </div>  
+
+	</br>
+	<p style="text-align: justify;">Using facial expressions, tone of voice, and emotion detection and analysis tools on Facebook and Twitter, use a complete framework to characterize and examine emotions. start by gathering information from various social media networks while following strict selection criteria, upholding ethical standards, and guaranteeing data privacy. The data will then be 
+    cleaned and preprocessed to remove noise and unrelated information. With a focus on ensuring uniformity and dependability among annotators, annotation criteria will be devised for classifying emotions. To preprocess facial photos and extract pertinent characteristics for emotion categorization, Then utilize facial expression recognition methods like OpenCV and deep learning-based algorithms. 
+    Additionally, audio data will be extracted from social media postings and speech processing methods including pitch, intensity, and prosody analysis will be used for tone of voice analysis. Based on the voice tone analysis, machine learning algorithms will create emotion categorization models. Convolutional neural network methods, including sentiment analysis and emotion identification, 
+    will be used to analyze and recognize emotions from text-based data. This will include using pre-trained models or creating unique models to precisely categorize emotions. Finally, look at methods for combining and fusing data that comes from text-based data, tone of voice, and facial expressions. To test the efficacy of multi-modal emotion identification, several fusion techniques will be used, 
+    such as decision-level fusion and feature-level fusion. The results of this study will help comprehend emotions more fully in online interactions on social media sites.</P>
+
+            
+  <div id="j"><br><br><br><br>
+	<h2 style="color:#869a61">Technology used
+</h2><br>
+	<p style="text-align: justify;">In my research, I employ logistic regression, commonly used in text-based sentiment analysis, alongside the EasyOCR open-source Python library for image-based emotion recognition. This hybrid approach aims to fuse results using techniques like late or early fusion, achieving a multimodal understanding of user emotions. EasyOCR contributes to this fusion by extracting 
+    text from images, enhancing the comprehensive analysis of user messages and emotions. Executed in Python within the Anaconda environment and leveraging JupyterLab, the research combines frameworks and algorithms to optimize sentiment analysis. Keras, a high-level neural networks API, simplifies model development with its user-friendly interface and layer configurations for tasks like embedding and LSTM. 
+    Meanwhile, LSTM, a specialized RNN variant, addresses sequence-based challenges, aiding sentiment analysis through intricate pattern recognition. Python, known for its simplicity and extensive libraries like NumPy and pandas, serves as the dominant language, fostering versatility from data preprocessing to deployment. In image classification and text categorization, Support Vector Machine (SVM) stands out, 
+    excelling in high-dimensional spaces and accommodating non-linearly separable data. Arduino, an open-source electronics platform, provides versatility for prototyping electronic projects, making it ideal for diverse applications, from hobbyist to professional use. Arduino's modular design, microcontrollers programmable via the Arduino IDE, and strong community support make it a preferred choice for 
+    experimenting with electronics, prototyping, and developing interactive projects involving sensors, motors, and actuators. Overall, this research adopts a synergistic approach, combining powerful tools and techniques to address both text and image aspects of sentiment analysis, with a focus on Python, Keras, LSTM, SVM, EasyOCR, and Arduino.
+</P>
+
+              <div class="row technology mt-5">
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                        <div class="avatar">
+                    <img src="./Images/python.png" alt="Python">
+                  </div>
+       
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/anaconda.png" alt="Anaconda">
+                  </div>
+             
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/Jupyter.png" alt="Jupyter">
+                  </div>
+             
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/keras.png" alt="Keras">
+                  </div>
+             
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-5">
+                  <div class="avatar">
+                    <img src="./Images/arduino.png" alt="Arduino">
+                  </div>
+            
+                </div>
+				
+      
+                </div>
+          </div>
+        </div>
+      </section>
+      <!-- Milestones -->
+
+      <section id="milestones" style="background-color:white;"><br>
+        <div class="container">
+            <br><br><h2 style="color:#869a61">Milestones</h2><br><br>
+            <div class="sub-section">
+                <div class="milestones">
+
+                    <!-- Project Proposal -->
+
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy" style = "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#abcaf5;"  >
+                        <h4>1. Project Proposal</h4>
+  			<p><strong>Submission Date : </strong>5th May 2023</p>
+                        <p><strong>Marks Allocated : </strong>6</p>
+                      </div>
+
+                    <!-- Progress Presentation I -->
+
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <h4>2. Progress Presentation I</h4>
+  			<p><strong>Submission Date : </strong>22th - 26th May 2023</p>
+                        <p><strong>Marks Allocated : </strong>15</p>
+                      </div>
+
+                    <!-- Research Paper -->
+
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy" style = "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#abcaf5;">
+                        <h4>3. Research Paper</h4>
+  			<p><strong>Submission Date : </strong>20th June 2023</p>
+                        <p><strong>Marks Allocated : </strong>10</p>
+                      </div>
+
+                    <!-- Progress Presentation II -->
+
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <h4>4. Progress Presentation II</h4>
+  			<p><strong>Submission Date : </strong>4th - 6th September 2023</p>
+                        <p><strong>Marks Allocated : </strong>18</p>
+                      </div>
+
+                    <!-- Viva -->
+
+                    <label class="timeline-event-icon"></label>
+                    <div class="timeline-event-copy" style = "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#abcaf5;">
+                     <h4>8. Final Presentation & Viva</h4>
+      <p><strong>Submission Date : </strong>30th October - 3rd November 2023</p>
+                      <p><strong>Marks Allocated : </strong>20</p>
+                    </div>
+
+                    <!-- Website -->
+
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <h4>5. Website Assessment</h4>
+  			<p><strong>Submission Date : </strong>6th November 2023</p>
+                        <p><strong>Marks Allocated : </strong>2</p>
+                      </div>
+
+                    <!-- Logbook -->
+
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy" style = "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#abcaf5;">
+                        <h4>6. Logbook</h4>
+  			<p><strong>Submission Date : </strong>30th November 2023</p>
+                        <p><strong>Marks Allocated : </strong>2</p>
+                      </div>
+
+                    <!-- Final Report -->
+
+                      <label class="timeline-event-icon"></label>
+                      <div class="timeline-event-copy">
+                        <h4>7. Final Report</h4>
+  			<p><strong>Submission Date : </strong>27th November 2023</p>
+                        <p><strong>Marks Allocated : </strong>15</p>
+                      </div>
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Downloads -->
+      <section id="downloads" style="background-color:white;"><br>
+        <div class="container">
+            <br><br><h2 style="color:#869a61">Documents</h2><br>
+            <!-- Documents -->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+       <br><a href="https://drive.google.com/drive/folders/1l4Z7ZAEJ0sUz4DbUPvXJmOyHMGqH0Y09?usp=drive_link" target="_blank"><h4 style="color:#869a61">Topic Assesment</h4></a>
+  	<p><strong>Submission Date : </strong>20th January 2023</p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+	<br><a href="https://drive.google.com/drive/folders/1fiED5xKBctKYDLj7Gjfl94xTqkzvsjTl?usp=drive_link" target="_blank"><h4 style="color:#869a61">Project Charter</h4></a>
+  	<p><strong>Submission Date : </strong>30th January 2023</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+       <br><a href="https://drive.google.com/drive/folders/13BYxH3mj44G5Dsn1WSqYnOzKm52tq2DX?usp=drive_link" target="_blank"><h4 style="color:#869a61">Project Proposal</h4></a>
+  	<p><strong>Submission Date : </strong>5th May 2023</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+       <br><a href="https://drive.google.com/drive/folders/1KVaUfWBw7DLo8Lyu4wvzf7prQ0rd3pri?usp=drive_link" target="_blank"><h4 style="color:#869a61">Status Documents I</h4></a>
+  	<p><strong>Submission Date : </strong>22th May 2023</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+       <br><a href="https://drive.google.com/drive/folders/1XIqLRVuCLa0Kg3HwbmJUXrwgZ525TVy4?usp=drive_link" target="_blank"><h4 style="color:#869a61">Research Paper</h4></a>
+  	<p><strong>Submission Date : </strong>20th June 2023</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+	<br><a href="https://drive.google.com/drive/folders/1l4Z7ZAEJ0sUz4DbUPvXJmOyHMGqH0Y09?usp=drive_link" target="_blank"><h4 style="color:#869a61">Status Documents II</h4></a>
+  	<p><strong>Submission Date : </strong>24th July 2023</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+       <br><a href="https://drive.google.com/drive/folders/1HpfWvZJimA2fsiIGN70iqfBJCBCYHr9H?usp=drive_link" target="_blank"><h4 style="color:#869a61">Final Report</h4></a>
+    <p><strong>Submission Date : </strong>10th September 2023</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+	<br><a href="https://drive.google.com/drive/folders/1e0lSuhHRiDlZJoZDn2UGeQSUoEZyQS_1?usp=drive_link" target="_blank"><h4 style="color:#869a61">Log Book</h4></a>
+  	<p><strong>Submission Date : </strong>30th October 2023</p>        
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+	<br><a href="https://drive.google.com/drive/folders/1SbR2--f_4e3y_i4g9fDALpQR35-xCN__?usp=drive_link" target="_blank"><h4 style="color:#869a61">Proofreader Document</h4></a>
+  	<p><strong>Submission Date : </strong>4th December 2023</p>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+
+<div  id="presentations" ><br><br><br><br>
+		<h2 style="color:#869a61">Presentation</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+	<br>
+      	<a href="https://drive.google.com/drive/folders/1cZqMZh5AiRuXzcHbOmnaqAOpCAXdp1nS?usp=drive_link" target="_blank"><h4 style="color:#869a61">Project Proposal</h4></a>
+  	<p><strong>Submission Date : </strong>27th - 31st March 2023</p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+	<br>
+        <a href="https://drive.google.com/drive/folders/19f6zMcRK1CoBjB8xsjNCYleGUY1Bx3U3?usp=drive_link" target="_blank"><h4 style="color:#869a61">Progress Presentation I</h4></a>
+  	<p><strong>Submission Date : </strong>22th - 26th May 2023</p>
+      </div>
+    </div>
+  </div>
+  
+<div class="column">
+    <div class="card">
+      <div class="container" style="background-color:#abcaf5;">
+	<br>
+        <a href="https://drive.google.com/drive/folders/1IVzj9PhLS3mqLgSbxdWp_oPQ8JNhN0RU?usp=drive_link" target="_blank"><h4 style="color:#869a61">Progress Presentation II</h4></a>
+  	<p><strong>Submission Date : </strong>4th - 6th September 2023</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+	<br>
+	<a href="https://drive.google.com/drive/folders/1b-00f84QyAz5BAtcOMq5wqG2ucemrG5l?usp=drive_link" target="_blank"><h4 style="color:#869a61">Final Presentation</h4></a>
+  	<p><strong>Submission Date : </strong>30th October - 03rd November 2023</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+	</section>
+      
+      <!-- About Us -->
+      <section id="about" class="main-sections " style="background-color:#FDFEFE"><br>
+        <div class="container"><br><br>
+                <h2 style="color:#869a61">Meet Our Team !</h2>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./Images/suranjini.jpg" alt="Ms. Suranjini Silva" width="362" height="400">
+      <div class="container">
+        <br><h4>Ms. Suranjini Silva</h4>
+        <p class="title">Supervisor</p>
+        <p>Sri Lanka Institute of Information Technology</p>
+        <p><button class="button"><a href="mailto:suranjini.s@sliit.lk" style="color:white;">Contact</a></button></p>
+
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="./Images/rangi.jpg" alt="Ms. Rangi Liyanage" width="362" height="400">
+      <div class="container">
+        <br><h4>Ms. Rangi Liyanage</h4>
+        <p class="title">Co - Supervisor</p>
+        <p>Sri Lanka Institute of Information Technology</p>
+        <p><button class="button"><a href="mailto:rangi.l@sliit.lk" style="color:white;">Contact</a></button></p>
+
+      </div>
+    </div>
+  </div>
+  
+<div class="column">
+    <div class="card">
+      <img src="./Images/dumidu.jpg" alt="Dumidu Sahan" width="362" height="400">
+      <div class="container">
+        <br><h4>Dumidu Sahan</h4>
+        <p class="title">Group Leader</p>
+        <p>Sri Lanka Institute of Information Technology</p>
+        <p><button class="button"><a href="mailto:dumindusahan342@gmail.com" style="color:white;">Contact</a></button></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./Images/kalpi.jpg" alt="Kalpi Gajanayaka" width="362" height="400">
+      <div class="container">
+        <br><h4>Kalpi Gajanayaka</h4>
+        <p class="title">Group Member</p>
+        <p>Sri Lanka Institute of Information Technology</p>
+        <p><button class="button"><a href="mailto:kalpanisathsara163@gmail.com" style="color:white;">Contact</a></button></p>
+
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <img src="./Images/muditha.JPG" alt="Muditha Ranganath" width="362" height="400">
+      <div class="container">
+        <br><h4>Muditha Ranganath</h4>
+        <p class="title">Group Member</p>
+        <p>Sri Lanka Institute of Information Technology</p>
+        <p><button class="button"><a href="mailto:muditharanganath2244@gmail.com" style="color:white;">Contact</a></button></p>
+
+      </div>
+    </div>
+  </div>
+  
+<div class="column">
+    <div class="card">
+      <img src="./Images/pamidu.jpg" alt="Pamidu Vimansa" width="362" height="400">
+      <div class="container">
+        <br><h4>Pamidu Vimansa</h4>
+        <p class="title">Group Member</p>
+        <p>Sri Lanka Institute of Information Technology</p>
+        <p><button class="button"><a href="mailto:paminduvw@gmail.com" style="color:white;">Contact</a></button></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </section>
+
+
+      <!-- Contact Us -->
+      <section id="contact" style="background-color:#FDFEFE">
+<br><br>
+        <div class="container"><br><br>
+            <h2 style="color:#869a61">Contact Us</h2>
+            <div class="sub-section">
+                <div class="row  mt-sm-5">
+                  <div class="col-md-6 col-sm-12 contact-form">
+                    <form action="MAILTO:emosensepro@gmail.com" method="POST" enctype="text/plain">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                      </div>
+                      <button type="submit" style="background-color: #869a61;" class="btn btncolorgradient" >Submit</button><br><br><br><br><br>
+                    </form>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12 contact-form">
+<div>
+<br><br><br><br>
+    <div class="card">
+      <div class="container">
+	<br>
+		<h4 style="color:#869a61">For more information reach us : </h2>
+        <p><strong>Email: </strong>emosensepro@gmail.com</p>
+        <p><strong>Telephone: </strong>+94 77 499 8037</p>
+        <p><strong>Address: </strong>No.160/5, Pittugala, Malabe, Sri Lanka</p>
+
+      </div>
+    </div>
+  </div>
+                  </div>
+
+                  
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- Scripts -->
+    <script src="./lib/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="./lib/fontawesome/js/all.min.js"></script>
+    <script src="./lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
